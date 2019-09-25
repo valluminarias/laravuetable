@@ -1,0 +1,45 @@
+{
+    "name": "valluminarias/laravuetable",
+    "description": "Vuetable laravel backend package",
+    "keywords": ["laravel", "vuetable", "vue", "table"],
+    "version": "1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Val Luminarias",
+            "email": "vluminarias@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "laravel/framework": "5.8.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vuetable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vuetable\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vuetable\\VuetableServiceProvider"
+            ],
+            "aliases": {
+                "Vuetable": "Vuetable\\VuetableFacade"
+            }
+        }
+    }
+}
